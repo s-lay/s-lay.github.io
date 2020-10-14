@@ -1,0 +1,109 @@
+/*
+Name: Sivly Lay
+Email: Sivly_Lay@student.uml.edu
+Affiliation: Computer Science Student at Umass Lowell in course 91.61 GUI Programming I
+Date: Oct 10, 2020
+Assignment: HW4
+Description: build on hw2 with Bootstrap to enchance responsive experience 
+Code Validation: W3C CSS Validation Service (http://jigsaw.w3.org/css-validator)
+*/
+
+/*source:https://www.w3schools.com/bootstrap/bootstrap_theme_band.asp*/
+body {
+  font: 400 15px/1.8 Lato, sans-serif;
+  color: #777;
+  background: #2f3640;
+}
+.container{
+  padding: 80px 120px;
+}
+h1{
+  margin: 10px 0 30px 0;
+  letter-spacing: 10px;      
+  color: white;
+  font-style: italic;
+}
+.nav-tabs li a {
+  color: #777;
+}
+.navbar {
+  font-family: Montserrat, sans-serif;
+  margin-bottom: 0;
+  background-color: #2d2d30;
+  border: 0;
+  font-size: 15px !important;
+  letter-spacing: 4px;
+  opacity: 0.9;
+  text-transform: uppercase;
+}
+.navbar li a, .navbar .navbar-brand { 
+  color: #d5d5d5 !important;
+}
+.navbar-nav li a:hover {
+  color: #fff !important;
+}
+.navbar-nav li.active a {
+  color: #fff !important;
+  background-color: #29292c !important;
+}
+.navbar-default .navbar-toggle {
+  border-color: transparent;
+}
+.open .dropdown-toggle {
+  color: #777;
+  background-color: #555 !important;
+}
+.dropdown-menu li a {
+  color: #000 !important;
+}
+.dropdown-menu li a:hover {
+  background-color: #777 !important;
+}
+.btn {
+  padding: 10px 20px;
+  background: #2d2d30;
+  color: #f1f1f1;
+  border-radius: 0;
+  transition: .2s;
+  width: 150px;
+  height: 50px;
+  margin-bottom: 15px;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.btn:hover, .btn:focus {
+  border: 1px solid #333;
+  background-color: #fff;
+  color: #000;
+  outline: none;
+}
+.modal-header, h4, .close {
+  background-color: #333;
+  color: #fff !important;
+  text-align: center;
+  font-size: 30px;
+}
+.modal-header, .modal-body {
+  padding: 40px 50px;
+  background-color: #333;
+  color: #fff !important;
+  
+  text-align: left;
+}
+#favoriteQuote {
+  position: relative;
+  padding: 50px 120px;
+  text-shadow: 2px 2px 8px #FF0000;
+  font-style: italic;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+}
+#updatedDate {
+  padding: 10px;
+  position: relative;
+  text-align: right;
+  font-size: 10px;
+  color: white;
+}
