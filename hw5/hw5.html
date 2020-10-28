@@ -1,0 +1,60 @@
+<!--
+Name: Sivly Lay
+Email: Sivly_Lay@student.uml.edu
+Affiliation: Computer Science Student at Umass Lowell in course 91.61 GUI Programming I
+Date: Oct 25, 2020
+Assignment: HW5
+Description: taking inputs from the user and build a dynamic multiplication table  
+Code Validation: W3C Markup Validation Service (http://validator.w3.org/) 
+-->
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GUI-I HW5</title>
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+
+  <!-- input form -->
+  <!--    https://www.w3schools.com/html/html_forms.asp -->
+   <div class="container">
+    <div id="enter">Please enter the table ranges</div>
+    <form>
+      <table id="inputTable">
+        <tr>
+          <th><label>Minimun Column Value:</label></th>
+          <td><input id="minCol"></td>
+        </tr>
+        <tr>
+          <th><label>Maximum Column Value:</label></th>
+          <td><input id="maxCol"></td>
+        </tr>
+        <tr>
+          <th><label>Minimun Row Value:</label></th>
+          <td><input id="minRow"></td>
+        </tr>
+        <tr>
+          <th><label>Maximun Row Value:</label></th>    
+          <td><input id="maxRow"></td>
+        </tr>
+        <tr>
+          <td colspan="2"><button type="button" onclick="main()" class="btn btn-default">Regenerate Table</button></td>
+        </tr>
+      </table>
+    </form>
+    <div id="errorMessage"></div>
+  </div>
+
+  <!-- table for multiplication -->
+  <!-- https://www.w3schools.com/html/html_tables.asp -->
+  <table id="multTable" >
+  </table>
+  <br>
+  <br>
+
+  <script src="js/script.js"></script>
+
+  </body>
+</html>

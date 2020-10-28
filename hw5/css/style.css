@@ -1,0 +1,58 @@
+/*
+Name: Sivly Lay
+Email: Sivly_Lay@student.uml.edu
+Affiliation: Computer Science Student at Umass Lowell in course 91.61 GUI Programming I
+Date: Oct 25, 2020
+Assignment: HW5
+Description: taking inputs from the user and build a dynamic multiplication table 
+Code Validation: W3C CSS Validation Service (http://jigsaw.w3.org/css-validator)
+*/
+
+/*https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_headings_left*/
+/*https://www.w3schools.com/html/html_tables.asp*/
+/*https://www.w3schools.com/css/css_table.asp*/
+body,html{
+	padding: 0;
+	margin: 0;
+	background-color: #EAF2F8;
+}
+.container{
+	text-align: center;
+	padding: 20px;
+}
+#enter{
+	text-align: center;
+	font-style: italic;
+	font-size: 20px;
+	padding: 10px;
+}
+#errorMessage{
+	text-align: center;
+	font-size: 15px;
+	font-style: italic;
+	color: red;
+	padding: 10px;
+}
+#inputTable{
+	margin: auto;
+}
+#inputTable th, #inputTable td{
+	padding: 5px;
+}
+
+#multTable, #multTable th, #multTable td{
+	border: 1px solid black;
+	margin: auto;
+
+}
+#multTable th, #multTable td {
+	padding: 5px;
+	width: 15px;
+	height: 15px;
+}
+ #multTable th{
+	background-color: #ccc;
+}
+ #multTable td{
+	background-color: #fff;
+}
