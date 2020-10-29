@@ -19,7 +19,7 @@ function main() {
 	// https://www.w3schools.com/js/tryit.asp?filename=tryjs_validation_number
 	// https://www.w3schools.com/jsref/jsref_number.asp
 	if (isNaN(minCol) || isNaN(maxCol) || isNaN(minRow) || isNaN(maxRow)) {
-		document.getElementById("errorMessage").innerHTML = "INVALID ERROR: please enter only numbers!";
+		document.getElementById("errorMessage").innerHTML = "INVALID ERROR: please enter only integer numbers!";
 	} else if(checkRange(minCol) || checkRange(maxCol) || checkRange(minRow) || checkRange(maxRow)){
 		document.getElementById("errorMessage").innerHTML = "INVALID ERROR: input range has to be between -50 to 50!";
 	} else if (isEmptyOrSpaces(minCol) || isEmptyOrSpaces(maxCol) || isEmptyOrSpaces(minRow) || isEmptyOrSpaces(maxRow)) {
@@ -28,6 +28,8 @@ function main() {
 		document.getElementById("errorMessage").innerHTML = "INVALID ERROR: mininum column value can't be greater than or equaled to maximum column value!";
 	} else if (Number(minRow) >= Number(maxRow)) {
 		document.getElementById("errorMessage").innerHTML = "INVALID ERROR: mininum row value can't be greater than or equaled to maximum row value!";
+	} else if (!Number.isInteger(Number(minCol)) || !Number.isInteger(Number(maxCol)) || !Number.isInteger(Number(minRow)) || !Number.isInteger(Number(maxRow))) {
+		document.getElementById("errorMessage").innerHTML = "INVALID ERROR: input value(s) can only be integer!";
 	} else {
 		document.getElementById("errorMessage").innerHTML = "";
 		generateTable(minCol, maxCol, minRow, maxRow);	
@@ -43,7 +45,7 @@ function isEmptyOrSpaces(inputValue){
 
 //return true if the value is out of bound
 function checkRange(inputValue){
-	return inputValue < -50 || 50 < inputValue;
+	return Number(inputValue) < -50 || 50 < Number(inputValue);
 }
 
 //https://www.w3schools.com/jsref/jsref_for.asp
