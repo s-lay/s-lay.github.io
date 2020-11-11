@@ -1,0 +1,56 @@
+/*
+Name: Sivly Lay
+Email: Sivly_Lay@student.uml.edu
+Affiliation: Computer Science Student at Umass Lowell in course 91.61 GUI Programming I
+Date: Nov 5, 2020
+Assignment: HW6
+Description: enhance hw6 to use jQuery validation plugin by taking inputs from the user and build a dynamic multiplication table  
+*/
+
+/*https://www.w3schools.com/html/tryit.asp?filename=tryhtml_table_headings_left*/
+/*https://www.w3schools.com/html/html_tables.asp*/
+/*https://www.w3schools.com/css/css_table.asp*/
+body,html{
+	padding: 5px;
+	margin: 0;
+	background-color: #EAF2F8;
+}
+#enter{
+	font-size: 20px;
+}
+input{
+	border:1px solid #000;
+	margin-bottom:.5em
+}
+input.error{
+	border:1px solid red
+}
+/*https://jqueryvalidation.org/files/demo/site-demos.css*/
+/*https://stackoverflow.com/questions/4810927/how-to-go-up-a-level-in-the-src-path-of-a-url-in-html*/
+label.error{
+	background:url("../images/unchecked.gif") no-repeat;
+	padding-left:16px;
+	margin-left:.3em
+}
+label.valid{
+	background:url("../images/checked.gif") no-repeat;
+	padding-left:16px;
+	margin-left:.3em
+}
+#multTable, #multTable th, #multTable td{
+	border: 1px solid black;
+	margin: auto;
+
+}
+#multTable th, #multTable td {
+	padding: 5px;
+	width: 15px;
+	height: 15px;
+}
+ #multTable th{
+	background-color: #ccc;
+}
+ #multTable td{
+	background-color: #fff;
+}
+
