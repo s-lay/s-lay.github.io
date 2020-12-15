@@ -1,0 +1,67 @@
+<!-- Name: Sivly Lay
+Email: Sivly_Lay@student.uml.edu
+Affiliation: Computer Science Student at Umass Lowell in course 91.61 GUI Programming I
+Date: Dec 7, 2020
+Assignment: HW8
+Description: implementing part of the Scrabble Game with Drag and Drop Jquery 
+ -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>GUI-I HW8</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css">
+  </head>
+  <body>
+  	<h1>Welcome to Scrabble Game</h1>
+
+    <!-- board to place the letter in -->
+    <!-- https://www.w3schools.com/tags/tag_img.asp -->
+  	<div class="board">
+  		<img src="images/Tile.png" id="tileBoard0" >
+      <img src="images/Tile.png" id="tileBoard1" >
+      <img src="images/Double_Letter.png" id="tileBoard2" >
+      <img src="images/Tile.png" id="tileBoard3" >
+      <img src="images/Double_Letter.png" id="tileBoard4">
+      <img src="images/Tile.png" id="tileBoard5" >
+      <img src="images/Tile.png" id="tileBoard6" >
+  	</div>
+
+    <!-- summary section of remaining tiles and score -->
+  	<div class="summary">
+  		<span>Remaining Tiles: <span id="remainingTiles">100</span></span>
+      <span>Score: <span id="score">+0</span></span>
+  	</div>
+    <br>
+    <div class="summary2">
+      <span>Total Score: <span id="totalScore">0</span></span>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="buttonSection">
+      <button type="button" onclick="restartGame()">Restart</button>
+      <button type="button" onclick="setupNextWord()">Next Word</button>
+    </div>
+
+  	<br>
+  	<br>
+  	<br>
+    
+    <!-- rack of random generated letters -->
+  	<div class="rack">
+  	</div>
+
+    <div id="dialog">
+      <p id="dialogContent"></p>
+    </div>
+
+
+
+  	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  	<script src="js/script.js"></script>
+  </body>
+</html>

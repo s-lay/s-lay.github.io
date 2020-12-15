@@ -1,0 +1,92 @@
+/*Name: Sivly Lay
+Email: Sivly_Lay@student.uml.edu
+Affiliation: Computer Science Student at Umass Lowell in course 91.61 GUI Programming I
+Date: Dec 7, 2020
+Assignment: HW8
+Description: implementing part of the Scrabble Game with Drag and Drop Jquery 
+*/
+body,html {
+	background-color: #EAFAF1;
+	outline: none;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+	padding: 5px;
+}
+/*https://www.w3schools.com/css/tryit.asp?filename=trycss_border-style*/
+.board {
+	margin: auto;
+	border-style: solid;
+	padding: 5px;
+	width: 591px;
+}
+/*https://www.w3schools.com/cssref/css_selectors.asp*/
+.board > img {
+	margin: auto;
+	border-style: groove;
+	width: 75px;
+	height: 75px;
+} 
+.summary, .summary2{
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	margin: auto;
+	width: 600px;
+	padding: 5px;
+}
+.buttonSection {
+	margin: auto;
+	width: 600px;
+	line-height: 2;
+}
+.buttonSection > button:first-child {
+	float: left;
+}
+.buttonSection > button:nth-child(2) {
+	float: right;
+}
+/*https://www.w3schools.com/css/css3_buttons.asp*/
+/*https://stackoverflow.com/questions/42134731/css-change-button-style-after-click/42134808*/
+.buttonSection > button, buttonSection > button:focus {
+	background: #2d2d30;
+	color: #f1f1f1;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .2s;
+	outline: none;
+}
+.buttonSection > button:hover {
+	border: 1px solid #333;
+	background-color: #fff;
+	color: #000;
+}
+/*https://www.w3schools.com/cssref/sel_nth-child.asp*/
+.summary > span:first-child {
+	float: left;
+}
+.summary > span:nth-child(2) {
+	float: right;
+}
+.summary2 > span:first-child {
+	float: right;
+}
+.rack {
+	margin: auto;
+	background-image: url("../images/scrabble-tile-holder-406774_640.png");
+	height: 100px;
+	width: 590px;
+	background-position: center
+	background-repeat: no-repeat;
+	
+}
+.rack > span {
+	padding: 2px;
+}
+/*https://www.quora.com/How-do-I-remove-close-button-on-the-jQuery-UI-dialog*/
+.no-close .ui-dialog-titlebar-close {  display: none;} 
+
